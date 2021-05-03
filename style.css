@@ -1,0 +1,76 @@
+body {
+  color: #444444; /*dark gray*/
+  background-color: #EEEEEE; /*very light gray*/
+}
+
+h1 {
+	font-size: 34px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 24px; /*default*/
+	margin-bottom: 5px;
+}
+
+h1, h2 {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+p {
+  background-color: #DDDDDD;
+  padding: 10px 5px;
+  border: 1px solid #333333;
+}
+
+.navi {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  color: #EEEEEE;
+}
+
+.navi ul {
+	list-style-type: none;
+}
+
+.navi li {
+	display: inline;
+	border-right: 1px solid #EEEEEE;
+}
+
+.navi li a:hover {
+	background-color: green;
+}
+
+.navi a {
+	padding: 8px;
+	color: #EEEEEE;
+}
+
+.bottom {
+  color: green;
+}
+
+.lists {
+  margin: 25px;
+}
+
+#experience {
+	color: #EEEEEE;
+	background-color: green;
+}
