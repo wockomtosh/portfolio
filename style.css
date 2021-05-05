@@ -3,18 +3,8 @@ body {
   background-color: #EEEEEE; /*very light gray*/
 }
 
-h1 {
-	font-size: 34px;
-	text-align: center;
-}
-
-h2 {
-	font-size: 24px; /*default*/
-	margin-bottom: 5px;
-}
-
 h1, h2 {
-	font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 ul {
@@ -38,39 +28,102 @@ p {
 }
 
 .navi {
-  margin: 0;
-  padding: 0;
-  background-color: blue;
-  color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.navi ul {
-	list-style-type: none;
+.navi-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.navi li {
-	display: inline;
-	border-right: 1px solid #EEEEEE;
+.navi-item {
+    border-right: 1px solid #EEEEEE;
 }
 
 .navi li a:hover {
-	background-color: green;
+    background-color: green;
 }
 
 .navi a {
-	padding: 8px;
-	color: #EEEEEE;
+    padding: 8px;
+    color: #EEEEEE;
 }
 
-.bottom {
-  color: green;
+@media only screen and (max-width: 500px) {
+    /* body {
+      background-color: green;
+    } */
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about {
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* .about-item {
+        width: 300%;
+    } */
+
+    .lists {
+        margin: 25px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
 
-.lists {
-  margin: 25px;
-}
+/* Desktop Styles */
+@media only screen and (min-width: 401px) {
+    h1 {
+    	font-size: 34px;
+    	text-align: center;
+    }
 
-#experience {
-	color: #EEEEEE;
-	background-color: green;
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .lists {
+        margin: 25px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
